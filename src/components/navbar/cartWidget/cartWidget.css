@@ -1,0 +1,15 @@
+.cartWidget__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartWidget__icon {
+    width: 20px;
+    cursor: pointer;
+    transition: transform 500ms ease;
+}
+
+.cartWidget__icon:hover {
+    transform: scale(1.1)
+}

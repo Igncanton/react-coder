@@ -16,7 +16,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
 }
 
 .homeAnchor {
@@ -34,7 +34,12 @@ html {
     margin: auto;
 }
 
-.navBar {}
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
 
 .ulDesktop {
     display: flex;
@@ -47,7 +52,7 @@ html {
 .ulDesktop li a {
     text-decoration: none;
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: color 500ms ease;
 }
