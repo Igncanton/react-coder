@@ -39,7 +39,7 @@ const Navbar = () => {
                     <li><a href='#'>Nintendo</a></li>
                     <li><a href='#'>Sega</a></li>
                 </ul>
-                <Cartwidget></Cartwidget>
+                <Cartwidget />
                 <button onClick={() => { responsiveMenu() }} className='navBtn' id='navBtn'>
                     {btnToggle
                         ? <img src={navBtn__open} style={{ width: '20px' }} className='btnIcon' alt='open menu button' />

@@ -5,8 +5,8 @@ import Navbar from './components/navbar/navbar';
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <Itemlistcontainer greeting='Welcome to our store'></Itemlistcontainer>
+      <Navbar />
+      <Itemlistcontainer greeting='Welcome to our store' />
     </div>
   );
 }
