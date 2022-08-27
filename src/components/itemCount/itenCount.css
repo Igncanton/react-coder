@@ -33,3 +33,9 @@
     width: 5rem;
     cursor: pointer;
 }
+
+.itemCount_addCartBtn {
+    width: 14.9rem;
+    padding: 0.1rem 0;
+    cursor: pointer;
+}

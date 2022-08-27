@@ -28,6 +28,7 @@ const Itemcount = () => {
                 <p className='itemCount_count'>{count}</p>
                 <button className='itemCount_btn' onClick={() => addItem()}>+</button>
             </div>
+            <button className='itemCount_addCartBtn'>add to cart</button>
         </div>
     );
 }
