@@ -28,7 +28,6 @@ const Navbar = () => {
                 setBtnToggle(!btnToggle);
             }, "100")
         }
-
     }
 
     return (
@@ -42,7 +41,9 @@ const Navbar = () => {
                 </ul>
                 <Cartwidget></Cartwidget>
                 <button onClick={() => { responsiveMenu() }} className='navBtn' id='navBtn'>
-                    {btnToggle ? <img src={navBtn__open} style={{ width: '20px', height: 'auto' }} className='btnIcon' alt='open menu button' /> : <img src={navBtn__close} style={{ width: '20px' }} className='btnIcon' alt='close menu button' />}
+                    {btnToggle
+                        ? <img src={navBtn__open} style={{ width: '20px' }} className='btnIcon' alt='open menu button' />
+                        : <img src={navBtn__close} style={{ width: '20px' }} className='btnIcon' alt='close menu button' />}
                 </button>
             </nav>
         </header>

@@ -1,0 +1,35 @@
+/* Item Count */
+.itemCount_container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.itemCount_stock {
+    text-align: center;
+    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.itemCount_stock span {
+    width: 5rem;
+}
+
+.itemCount_btnContainer {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.itemCount_count {
+    width: 2rem;
+    text-align: center;
+}
+
+.itemCount_btn {
+    width: 5rem;
+    cursor: pointer;
+}
