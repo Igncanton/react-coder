@@ -1,0 +1,35 @@
+.itemCard_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 250px;
+    overflow: hidden;
+}
+
+.itemCard_imgContainer {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.itemCard_img {
+    width: 100%;
+    height: 100%
+}
+
+.itemCard_detailsBtn {
+    border-style: none;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    background-color: cadetblue;
+    color: whitesmoke;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 500ms ease;
+}
+
+.itemCard_detailsBtn:hover {
+    background-color: rgb(72, 119, 121)
+}

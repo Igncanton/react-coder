@@ -6,6 +6,7 @@ const Cartwidget = () => {
     return (
         <div className='cartWidtget__container'>
             <img className='cartWidget__icon' src={cartWidgetIcon} alt='navbar shopping cart' style={{ width: '20px' }} />
+            <p className='cartWidget_itemsAmount'>0</p>
         </div>
     );
 }

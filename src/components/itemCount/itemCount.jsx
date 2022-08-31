@@ -2,8 +2,8 @@ import './itenCount.css'
 import React, { useState } from 'react';
 
 
-const Itemcount = () => {
-    const [stock, setStock] = useState(5)
+const Itemcount = ({ stockProduct }) => {
+    const [stock, setStock] = useState(stockProduct)
     const [count, setCount] = useState(0);
 
     function addItem() {

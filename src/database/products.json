@@ -1,0 +1,51 @@
+[
+    {
+        "game": "Zelda",
+        "year": 1995,
+        "img": "./img/zelda.jpg",
+        "price": 250,
+        "stock": 20
+    },
+    {
+        "game": "Pokemon Yellow",
+        "year": 1999,
+        "img": "./img/pokemon.jpg",
+        "price": 375,
+        "stock": 35
+    },
+    {
+        "game": "Space Invaders",
+        "year": 1985,
+        "img": "./img/spaceInvaders.jpg",
+        "price": 199,
+        "stock": 17
+    },
+    {
+        "game": "King of Fighters",
+        "year": 1997,
+        "img": "./img/kingOfFighters.jpg",
+        "price": 435,
+        "stock": 65
+    },
+    {
+        "game": "Tetris",
+        "year": 1980,
+        "img": "./img/tetris.jpg",
+        "price": 198,
+        "stock": 77
+    },
+    {
+        "game": "Bomberman",
+        "year": 1983,
+        "img": "./img/bomberman.jpg",
+        "price": 195,
+        "stock": 53
+    },
+    {
+        "game": "Metroid",
+        "year": 1989,
+        "img": "./img/metroid.webp",
+        "price": 170,
+        "stock": 99
+    }
+]
