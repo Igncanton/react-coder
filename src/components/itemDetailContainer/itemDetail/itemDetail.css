@@ -1,0 +1,34 @@
+.itemDetail {
+    display: flex;
+}
+
+
+
+.detailContainer {
+    min-height: 80vh;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detailImgContainer {}
+
+.detailImgContainer img {}
+
+.detailInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 2rem;
+
+}
+
+.detailContainerTwo h2 {
+    text-align: center;
+}
+
+.detailContainerTwo p {}
