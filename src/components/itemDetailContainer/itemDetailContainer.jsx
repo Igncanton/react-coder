@@ -1,17 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Itemdetail from './itemDetail/itemDetail';
-import itemDB from '../../database/item.json'
+import productsDB from '../../database/products.json';
+import { useParams } from 'react-router-dom';
 
 const Itemdetailcontainer = () => {
-    const [item, setItem] = useState([]);
+    const [item, setItem] = useState({});
 
-    const promise = new Promise((resolve) => {
-        setTimeout(() => resolve(itemDB), 2000);
-    });
+    const { itemId } = useParams();
 
-    promise.then((response) => {
-        setItem(response)
-    })
+    useEffect(() => {
+        const promise = new Promise((resolve) => {
+            setTimeout(() => resolve(productsDB), 2000);
+        });
+
+        promise.then((response) => setItem(response.find(game => game.id === parseInt(itemId))))
+    }, [])
 
     return (
         <div className='itemDetailContainer'>

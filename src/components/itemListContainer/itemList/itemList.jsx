@@ -10,7 +10,7 @@ const Itemlist = ({ items }) => {
             <h2 className='itemList_title'>- Games Catalogue -</h2>
             <div className='itemList_cardContainer'>
                 {items.map((item) => {
-                    return <Item key={item.game} name={item.game} year={item.year} price={item.price} img={item.img} />
+                    return <Item id={item.id} key={item.game} name={item.game} year={item.year} price={item.price} img={item.img} />
                 })}
             </div>
         </div>

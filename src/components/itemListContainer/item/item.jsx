@@ -1,7 +1,9 @@
 import './item.css'
 import React from 'react';
+import { Link, useParams } from 'react-router-dom';
 
-const Item = ({ name, year, price, img }) => {
+const Item = ({ id, name, year, price, img }) => {
+
     return (
         <div className='itemCard_container'>
             <div className='itemCard_imgContainer'>
@@ -10,7 +12,7 @@ const Item = ({ name, year, price, img }) => {
             <h3 className='itemCard_title'>{name}</h3>
             <p className='itemCard_year'>released: {year}</p>
             <p className='itemCard_price'>${price}</p>
-            <button className='itemCard_detailsBtn'>More details</button>
+            <Link to={`/itemDetail/${id}`}><button className='itemCard_detailsBtn'>More details</button></Link>
         </div>
     );
 }

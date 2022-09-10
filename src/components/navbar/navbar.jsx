@@ -3,14 +3,16 @@ import React, { useState } from 'react';
 import Cartwidget from './cartWidget/cartWidget';
 import navBtn__open from './navBtn__open.svg';
 import navBtn__close from './navBtn__close.svg';
+import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
+
+    //Responsiveness of the menu
     const [btnToggle, setBtnToggle] = useState(true)
 
     const responsiveMenu = () => {
         const responsiveNav = document.getElementById('responsiveNav')
-
 
         if (btnToggle === false && responsiveNav.classList.contains('openNav') && responsiveNav.classList.contains('mobileNav')) {
             responsiveNav.classList.remove('openNav')
@@ -30,14 +32,16 @@ const Navbar = () => {
         }
     }
 
+    //
+
     return (
         <header className='header'>
-            <a className="homeAnchor" href='#'><h1 className='navLogo'>Arcadia <span>retro games</span></h1></a>
+            <NavLink className="homeAnchor" to='/'><h1 className='navLogo'>Arcadia <span>retro games</span></h1></NavLink>
             <nav className='navBar'>
                 <ul className='ulDesktop' id='responsiveNav'>
-                    <li><a href='#'>Gameboy</a></li>
-                    <li><a href='#'>Nintendo</a></li>
-                    <li><a href='#'>Sega</a></li>
+                    <li><NavLink to='/category/Gameboy'>Gameboy</NavLink></li>
+                    <li><NavLink to='/category/Nintendo'>Nintendo</NavLink></li>
+                    <li><NavLink to='/category/Sega'>Sega</NavLink></li>
                 </ul>
                 <Cartwidget />
                 <button onClick={() => { responsiveMenu() }} className='navBtn' id='navBtn'>

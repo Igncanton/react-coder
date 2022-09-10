@@ -1,50 +1,64 @@
 [
     {
+        "id": 1,
         "game": "Zelda",
         "year": 1995,
         "img": "./img/zelda.jpg",
+        "console": "Gameboy",
         "price": 250,
         "stock": 20
     },
     {
+        "id": 2,
         "game": "Pokemon Yellow",
         "year": 1999,
         "img": "./img/pokemon.jpg",
+        "console": "Gameboy",
         "price": 375,
         "stock": 35
     },
     {
+        "id": 3,
         "game": "Space Invaders",
         "year": 1985,
         "img": "./img/spaceInvaders.jpg",
+        "console": "Nintendo",
         "price": 199,
         "stock": 17
     },
     {
+        "id": 4,
         "game": "King of Fighters",
         "year": 1997,
         "img": "./img/kingOfFighters.jpg",
+        "console": "Sega",
         "price": 435,
         "stock": 65
     },
     {
+        "id": 5,
         "game": "Tetris",
         "year": 1980,
         "img": "./img/tetris.jpg",
+        "console": "Sega",
         "price": 198,
         "stock": 77
     },
     {
+        "id": 6,
         "game": "Bomberman",
         "year": 1983,
         "img": "./img/bomberman.jpg",
+        "console": "Nintendo",
         "price": 195,
         "stock": 53
     },
     {
+        "id": 7,
         "game": "Metroid",
         "year": 1989,
         "img": "./img/metroid.webp",
+        "console": "Gameboy",
         "price": 170,
         "stock": 99
     }
