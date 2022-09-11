@@ -1,10 +1,9 @@
 /* Item Count */
 .itemCount_container {
-    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.6rem;
 }
 
 .itemCount_stock {

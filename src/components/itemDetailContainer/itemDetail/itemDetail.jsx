@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Itemcount from '../../itemCount/itemCount';
 import './itemDetail.css';
 
-const Itemdetail = ({ item }) => {
-    const [stock, setStock] = useState(0);
+//ItemDetail component
+const ItemDetail = ({ item }) => {
 
     return (
         <div className='itemDetail'>
@@ -15,11 +15,12 @@ const Itemdetail = ({ item }) => {
                     <h2>{item.game}</h2>
                     <p>Price: ${item.price}</p>
                     <p>Year: {item.year}</p>
-                    <Itemcount stockProduct={20} />
+                    <p className='detailInfoContainer__description'>{item.description}</p>
+                    <Itemcount stockProduct={item.stock} />
                 </div>
             </div>
         </div>
     );
 }
 
-export default Itemdetail;
+export default ItemDetail;

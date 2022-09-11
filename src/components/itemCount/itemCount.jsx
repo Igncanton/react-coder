@@ -1,9 +1,12 @@
-import './itenCount.css'
+import './itemCount.css'
 import React, { useState } from 'react';
 
-
+// ItemCount Component
 const Itemcount = ({ stockProduct }) => {
+    //Updates the stock amount
     const [stock, setStock] = useState(stockProduct)
+
+    //Updates the amount of items added
     const [count, setCount] = useState(0);
 
     function addItem() {

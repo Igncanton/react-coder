@@ -2,64 +2,161 @@
     {
         "id": 1,
         "game": "Zelda",
-        "year": 1995,
-        "img": "./img/zelda.jpg",
+        "year": 1993,
+        "img": "/img/zelda.jpg",
         "console": "Gameboy",
-        "price": 250,
-        "stock": 20
+        "price": 86,
+        "stock": 20,
+        "description": "The Legend of Zelda games feature a mix of puzzles, action, adventure/battle gameplay, and exploration."
     },
     {
         "id": 2,
         "game": "Pokemon Yellow",
         "year": 1999,
-        "img": "./img/pokemon.jpg",
+        "img": "/img/pokemon.jpg",
         "console": "Gameboy",
         "price": 375,
-        "stock": 35
+        "stock": 35,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
     },
     {
         "id": 3,
         "game": "Space Invaders",
         "year": 1985,
-        "img": "./img/spaceInvaders.jpg",
-        "console": "Nintendo",
+        "img": "/img/spaceInvaders.jpg",
+        "console": "Gameboy",
         "price": 199,
-        "stock": 17
+        "stock": 17,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
     },
     {
         "id": 4,
         "game": "King of Fighters",
         "year": 1997,
-        "img": "./img/kingOfFighters.jpg",
-        "console": "Sega",
+        "img": "/img/kingOfFighters.jpg",
+        "console": "Gameboy",
         "price": 435,
-        "stock": 65
+        "stock": 65,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
     },
     {
         "id": 5,
         "game": "Tetris",
         "year": 1980,
-        "img": "./img/tetris.jpg",
-        "console": "Sega",
+        "img": "/img/tetris.jpg",
+        "console": "Gameboy",
         "price": 198,
-        "stock": 77
+        "stock": 77,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
     },
     {
         "id": 6,
         "game": "Bomberman",
         "year": 1983,
-        "img": "./img/bomberman.jpg",
-        "console": "Nintendo",
+        "img": "/img/bomberman.jpg",
+        "console": "Gameboy",
         "price": 195,
-        "stock": 53
+        "stock": 53,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
     },
     {
         "id": 7,
         "game": "Metroid",
         "year": 1989,
-        "img": "./img/metroid.webp",
+        "img": "/img/metroid.webp",
         "console": "Gameboy",
         "price": 170,
-        "stock": 99
+        "stock": 99,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
+    },
+    {
+        "id": 8,
+        "game": "Sonic The Hedgehog",
+        "year": 1993,
+        "img": "/img/sonic.webp",
+        "console": "Sega",
+        "price": 225,
+        "stock": 101,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
+    },
+    {
+        "id": 9,
+        "game": "Mortal Kombat",
+        "year": 1992,
+        "img": "/img/mortalKombat.jpg",
+        "console": "Sega",
+        "price": 199,
+        "stock": 170,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
+    },
+    {
+        "id": 10,
+        "game": "Earthworm Jim",
+        "year": 1989,
+        "img": "/img/earthwormJim.png",
+        "console": "Sega",
+        "price": 201,
+        "stock": 35,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
+    },
+    {
+        "id": 11,
+        "game": "Lion King",
+        "year": 1996,
+        "img": "/img/lionKing.webp",
+        "console": "Sega",
+        "price": 177,
+        "stock": 48,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
+    },
+    {
+        "id": 12,
+        "game": "Super Mario",
+        "year": 1987,
+        "img": "/img/superMario.jpg",
+        "console": "Nintendo",
+        "price": 100,
+        "stock": 98,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
+    },
+    {
+        "id": 13,
+        "game": "Excite Bike",
+        "year": 1987,
+        "img": "/img/exciteBike.jpg",
+        "console": "Nintendo",
+        "price": 77,
+        "stock": 48,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
+    },
+    {
+        "id": 14,
+        "game": "Pacman",
+        "year": 1986,
+        "img": "/img/pacman.png",
+        "console": "Nintendo",
+        "price": 125,
+        "stock": 65,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
+    },
+    {
+        "id": 15,
+        "game": "Battle City",
+        "year": 1988,
+        "img": "/img/battlecity.png",
+        "console": "Nintendo",
+        "price": 123,
+        "stock": 69,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
+    },
+    {
+        "id": 16,
+        "game": "Battletoads",
+        "year": 1990,
+        "img": "/img/battletoads.png",
+        "console": "Nintendo",
+        "price": 92,
+        "stock": 25,
+        "description": "Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist."
     }
 ]

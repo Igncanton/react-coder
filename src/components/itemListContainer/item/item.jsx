@@ -1,7 +1,8 @@
 import './item.css'
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
+//Item component used for each individual item needed in ItemList
 const Item = ({ id, name, year, price, img }) => {
 
     return (

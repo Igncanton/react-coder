@@ -1,3 +1,5 @@
+/* ItemList */
+
 .itemList_container {
     display: flex;
     flex-direction: column;
@@ -15,4 +17,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.loading {
+    color: purple;
 }
