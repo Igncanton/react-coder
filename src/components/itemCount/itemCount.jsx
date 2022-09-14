@@ -2,7 +2,7 @@ import './itemCount.css'
 import React, { useState } from 'react';
 
 // ItemCount Component
-const Itemcount = ({ stockProduct }) => {
+const Itemcount = ({ stockProduct, addToCart }) => {
     //Updates the stock amount
     const [stock, setStock] = useState(stockProduct)
 
@@ -31,7 +31,7 @@ const Itemcount = ({ stockProduct }) => {
                 <p className='itemCount_count'>{count}</p>
                 <button className='itemCount_btn' onClick={() => addItem()}>+</button>
             </div>
-            <button className='itemCount_addCartBtn'>add to cart</button>
+            <button className='itemCount_addCartBtn' onClick={addToCart}>add to cart</button>
         </div>
     );
 }
