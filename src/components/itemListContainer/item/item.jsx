@@ -1,5 +1,5 @@
 import './item.css'
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 //Item component used for each individual item needed in ItemList

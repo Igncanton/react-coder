@@ -23,6 +23,12 @@ const Itemcount = ({ stockProduct, addToCart }) => {
         }
     }
 
+    function addCartUpdateStock() {
+        addToCart(count)
+        setStock(stock - count)
+        setCount(0)
+    }
+
     return (
         <div className='itemCount_container'>
             <p className='itemCount_stock'>Disponible: <span>{stock}</span></p>
@@ -31,7 +37,7 @@ const Itemcount = ({ stockProduct, addToCart }) => {
                 <p className='itemCount_count'>{count}</p>
                 <button className='itemCount_btn' onClick={() => addItem()}>+</button>
             </div>
-            <button className='itemCount_addCartBtn' onClick={addToCart}>add to cart</button>
+            <button className='itemCount_addCartBtn' onClick={() => addCartUpdateStock()}>add to cart</button>
         </div>
     );
 }

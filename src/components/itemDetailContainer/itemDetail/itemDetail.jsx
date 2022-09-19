@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useCartContext } from '../../../context/CartContext';
 import Itemcount from '../../itemCount/itemCount';
 import { Link } from 'react-router-dom'
 import './itemDetail.css';
@@ -8,8 +9,11 @@ const ItemDetail = ({ item }) => {
 
     const [cartAdded, setCartAdded] = useState(false);
 
+    const { addItem } = useCartContext()
+
     const onAdd = (quantity) => {
         setCartAdded(true)
+        addItem(item, quantity)
     }
 
     return (
@@ -23,13 +27,8 @@ const ItemDetail = ({ item }) => {
                     <p>Price: ${item.price}</p>
                     <p>Year: {item.year}</p>
                     <p className='detailInfoContainer__description'>{item.description}</p>
-
-                    {
-                        cartAdded
-                            ? <Link to='/cart'><button className='addToCart__btn'>Go To Cart
-                            </button></Link>
-                            : <Itemcount stockProduct={item.stock} addToCart={onAdd} />
-                    }
+                    <Itemcount stockProduct={item.stock} addToCart={onAdd} />
+                    {cartAdded ?? <Link to='/cart'><button className='addToCart__btn'>Go To Cart</button></Link>}
                 </div>
             </div>
         </div>
