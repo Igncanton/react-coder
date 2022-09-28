@@ -1,61 +1,67 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import './itemListContainer.css';
-import productsDB from '../../database/products.json';
-import ItemList from './itemList/itemList';
-import LoadingSpinner from '../loadingSpinner/loadingSpinner';
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import "./itemListContainer.css";
+import productsDB from "../../database/products.json";
+import ItemList from "./itemList/itemList";
+import LoadingSpinner from "../loadingSpinner/loadingSpinner";
 
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  query,
+  where,
+} from "firebase/firestore";
 
 //ItemListContainer component
 const ItemListContainer = (props) => {
+  //Updates the items state once the items are brought from the database
+  const [items, setItems] = useState([]);
 
-    //Updates the items state once the items are brought from the database
-    const [items, setItems] = useState([]);
+  //Updates the loading state to control conditional rendering
+  const [loading, setLoading] = useState(true);
 
-    //Updates the loading state to control conditional rendering
-    const [loading, setLoading] = useState(true);
+  //Parameter used for router navigation
+  const { categoryId } = useParams();
 
-    //Parameter used for router navigation
-    const { categoryId } = useParams()
+  useEffect(() => {
+    const querydb = getFirestore();
+    const queryCollection = collection(querydb, "arcadiaDB");
 
-    useEffect(() => {
-        //Promise that brings the products from the database
-        const promise = new Promise((resolve) => {
-            setTimeout(() => resolve(productsDB), 2000);
-        });
+    if (categoryId) {
+      const queryFilter = query(
+        queryCollection,
+        where("console", "==", categoryId)
+      );
+      getDocs(queryFilter).then((res) =>
+        setItems(res.docs.map((game) => ({ id: game.id, ...game.data() })))
+      );
+    } else {
+      getDocs(queryCollection).then((res) =>
+        setItems(res.docs.map((game) => ({ id: game.id, ...game.data() })))
+      );
+    }
+  }, [categoryId]);
 
-        //Conditional to bring the respective items asked by the categoryId
-        if (categoryId) {
-            promise.then((response) => setItems(response.filter(games => games.console === categoryId)))
-        } else {
-            promise.then((response) => { setItems(response) })
-        }
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3200);
+  }, [categoryId]);
 
-        //Updates the loading for mockyng the transition dealyed between navigations
-        setLoading(true)
-
-        setTimeout(() => {
-            setLoading(false)
-        }, 2000);
-
-    }, [categoryId])
-
-
-    //Updates loading state for conditional rendering
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false)
-        }, 2000);
-    }, []);
-
-
-    return (
-        <div className='itemListContainer'>
-            <h1 className='itemListContainer__title'>{props.greeting}</h1>
-            <h2 className='itemList_title'>{`${categoryId !== undefined ? categoryId : 'Game'}'s Catalogue`}</h2>
-            {loading ? (<LoadingSpinner />) : (<ItemList items={items} category={categoryId} />)}
-        </div>
-    );
-}
+  return (
+    <div className="itemListContainer">
+      <h1 className="itemListContainer__title">{props.greeting}</h1>
+      <h2 className="itemList_title">{`${
+        categoryId !== undefined ? categoryId : "Game"
+      }'s Catalogue`}</h2>
+      {loading ? (
+        <LoadingSpinner />
+      ) : (
+        <ItemList items={items} category={categoryId} />
+      )}
+    </div>
+  );
+};
 
 export default ItemListContainer;

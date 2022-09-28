@@ -1,116 +1,122 @@
 /* Navbar */
 
 .header {
-    background-color: rgb(51, 17, 70);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2.5rem;
-    z-index: 100;
+  background-color: rgb(51, 17, 70);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  z-index: 100;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2), 0 4px 6px -4px rgb(0 0 0 / 0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .homeAnchor {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .navLogo {
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
 }
 
 .navLogo span {
-    font-size: 1rem;
-    margin: auto;
+  font-size: 1rem;
+  margin: auto;
 }
 
 .navBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .ulDesktop {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
 }
 
 .ulDesktop li {
-    text-align: center;
+  text-align: center;
 }
 
 .ulDesktop li a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: color 500ms ease;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 500ms ease;
 }
 
 .ulDesktop li a:hover {
-    color: orange;
+  color: orange;
 }
 
-.cartWidgetContainer {}
+.cartWidgetContainer {
+}
 
 .navBtn {
-    cursor: pointer;
-    background-color: transparent;
-    border-style: none;
-    display: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-style: none;
+  display: none;
 }
 
 .btnIcon {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .mobileNav {
-    display: flex !important;
-    width: 100%;
-    position: absolute;
-    height: 0;
-    right: 0;
-    top: 90px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    background-color: rgb(51, 17, 70);
-    list-style: none;
-    transition: height 600ms ease;
-    overflow: hidden;
+  display: flex !important;
+  width: 100%;
+  position: absolute;
+  height: 0;
+  right: 0;
+  top: 90px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: rgb(51, 17, 70);
+  list-style: none;
+  transition: height 600ms ease;
+  overflow: hidden;
 }
 
 .openNav {
-    height: 30vh;
+  height: 30vh;
 }
 
 .closeNav {
-    height: 0;
+  height: 0;
 }
 
-.mobileNav li {}
+.mobileNav li {
+}
 
 .mobileNav li a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: color 500ms ease;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 500ms ease;
 }
 
 .mobileNav li a:hover {
-    color: orange;
+  color: orange;
 }
 
 @media (max-width: 950px) {
-    .navBtn {
-        display: initial;
-    }
+  .navBtn {
+    display: initial;
+  }
 
-    .ulDesktop {
-        display: none;
-    }
+  .ulDesktop {
+    display: none;
+  }
 }

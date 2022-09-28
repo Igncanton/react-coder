@@ -1,17 +1,17 @@
 /* ItemListContainer */
 
 .itemListContainer {
-    margin: 0 auto;
-    padding: 0 0.9rem;
-    max-width: 1400px;
+  margin: 8.5rem auto 4rem auto;
+  padding: 0 0.9rem;
+  max-width: 1400px;
 }
 
 .itemListContainer__title {
-    margin-top: 2rem;
-    text-align: center;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .itemList_title {
-    margin-bottom: 2rem;
-    text-align: center;
+  margin-bottom: 3rem;
+  text-align: center;
 }
