@@ -46,6 +46,7 @@ const CartProvider = ({ children }) => {
         removeItem,
         totalPrice,
         totalProducts,
+        setCart,
         cart,
       }}
     >

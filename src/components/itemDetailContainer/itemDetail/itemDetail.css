@@ -1,50 +1,57 @@
 /* ItemDetail */
 
 .itemDetail {
-    display: flex;
+  display: flex;
+  margin-top: 5rem;
 }
 
 .detailContainer {
-    min-height: 80vh;
-    width: fit-content;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 80vh;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .detailImgContainer {
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
 }
 
 .detailImgContainer img {
-    width: 100%;
-    height: 100%
+  width: 100%;
+  height: 100%;
 }
 
 .detailInfoContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-    padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1rem 0.5rem;
 }
 
 .detailInfoContainer h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .detailInfoContainer__description {
-    width: 300px;
-    text-align: left;
-    padding-inline: 0.6rem;
+  width: 300px;
+  text-align: left;
+  padding-inline: 0.6rem;
 }
 
 .addToCart__btn {
-    width: 14.9rem;
-    padding: 0.1rem 0;
-    cursor: pointer;
+  width: 14.9rem;
+  padding: 0.1rem 0;
+  cursor: pointer;
+}
+
+@media (max-width: 580px) {
+  .detailContainer {
+    flex-direction: column;
+  }
 }

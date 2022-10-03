@@ -26,3 +26,21 @@
   transform: translateY(-4px);
   padding: 1em 3em;
 }
+
+.cart__checkout--btn {
+  margin: 1rem auto 4rem auto;
+  border-style: none;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 4px;
+  font-family: inherit;
+  padding: 0.2em 0.3em;
+  cursor: pointer;
+  transition: all 500ms ease;
+  text-decoration: none;
+  color: black;
+}
+
+.cart__checkout--btn:hover {
+  background-color: rgb(233, 233, 233);
+}

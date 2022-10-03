@@ -1,3 +1,4 @@
+import { addDoc, getFirestore, collection } from "firebase/firestore";
 import React from "react";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../context/CartContext";
@@ -23,6 +24,10 @@ const Cart = () => {
           <ItemCart key={product.id} product={product} />
         ))}
         <p className="cart__totalPrice">Total: ${totalPrice()}</p>
+        {/* <button onClick={handleClick}>Emitir compra</button> */}
+        <Link to="/checkout" className="cart__checkout--btn">
+          Checkout
+        </Link>
       </div>
     );
   }

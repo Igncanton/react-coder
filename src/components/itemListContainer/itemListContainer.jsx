@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./itemListContainer.css";
-import productsDB from "../../database/products.json";
 import ItemList from "./itemList/itemList";
 import LoadingSpinner from "../loadingSpinner/loadingSpinner";
 
