@@ -1,4 +1,3 @@
-import "./App.css";
 import ItemDetailContainer from "./components/itemDetailContainer/itemDetailContainer";
 import ItemListContainer from "./components/itemListContainer/itemListContainer";
 import Navbar from "./components/navbar/navbar";
@@ -13,7 +12,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <CartProvider>
-        
           <Navbar />
 
           <Routes>
