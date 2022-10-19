@@ -13,7 +13,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <CartProvider>
+        
           <Navbar />
+
           <Routes>
             <Route
               exact

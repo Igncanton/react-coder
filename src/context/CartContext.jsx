@@ -28,8 +28,6 @@ const CartProvider = ({ children }) => {
     }
   };
 
-  console.log("Carrito: ", cart);
-
   const totalPrice = () => {
     return cart.reduce((prev, act) => prev + act.quantity * act.price, 0);
   };

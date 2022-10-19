@@ -1,26 +1,24 @@
 /* CartWidget */
 
-.cartWidget__container {}
-
 .cartWidget__icon {
-    width: 20px;
-    margin: auto;
-    cursor: pointer;
-    transition: transform 500ms ease;
+  width: 20px;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 500ms ease;
 }
 
 .cartWidget__icon:hover {
-    transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 .cartWidget_itemsAmount {
-    color: black;
-    background-color: whitesmoke;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 0.8rem;
-    padding-left: 0.15rem;
-    position: absolute;
-    top: 20px;
-    right: 28px;
+  color: black;
+  background-color: whitesmoke;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  padding-left: 0.15rem;
+  position: absolute;
+  top: 20px;
+  right: 28px;
 }

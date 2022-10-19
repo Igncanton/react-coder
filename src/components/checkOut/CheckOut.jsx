@@ -11,7 +11,7 @@ function CheckOut() {
   const handleOrder = (order) => {
     const db = getFirestore();
     const ordersCollection = collection(db, "orders");
-    addDoc(ordersCollection, order).then(({ id }) => console.log(id));
+    addDoc(ordersCollection, order);
     setCart([]);
     setCheckOutFinished(true);
   };

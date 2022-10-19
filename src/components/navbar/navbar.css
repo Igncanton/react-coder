@@ -57,9 +57,6 @@
   color: orange;
 }
 
-.cartWidgetContainer {
-}
-
 .navBtn {
   cursor: pointer;
   background-color: transparent;
@@ -95,9 +92,6 @@
 
 .closeNav {
   height: 0;
-}
-
-.mobileNav li {
 }
 
 .mobileNav li a {

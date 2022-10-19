@@ -113,9 +113,6 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* CartWidget */}
-        <CartWidget />
-
         {/* Btn open - close toggle */}
         <button
           onClick={() => {
@@ -140,6 +137,9 @@ const Navbar = () => {
             />
           )}
         </button>
+
+        {/* CartWidget */}
+        <CartWidget />
       </nav>
     </header>
   );

@@ -30,7 +30,7 @@
   border-style: none;
   padding: 0.3rem 0.6rem;
   cursor: pointer;
-  background-color: cadetblue;
+  background-color: rgb(51, 17, 70);
   color: whitesmoke;
   border-radius: 4px;
   font-size: 1rem;
@@ -39,5 +39,5 @@
 }
 
 .itemCard_detailsBtn:hover {
-  background-color: rgb(72, 119, 121);
+  background-color: #70259b;
 }

@@ -8,12 +8,9 @@
   gap: 2em;
 }
 
-.cart__emptyText {
-}
-
 .cart__shopping--btn {
   text-decoration: none;
-  background-color: #331146;
+  background-color: rgb(51, 17, 70);
   color: whitesmoke;
   padding: 1em 2em;
   border-radius: 4px;
